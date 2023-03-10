@@ -1,7 +1,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("images/table.png");
-    background-size: cover;
+    background-image: url("scaryblackjack.jpeg");
+    background-size: contain;
     font-weight: bold;
     color: white;
     text-align: center;
