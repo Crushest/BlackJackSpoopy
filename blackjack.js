@@ -66,6 +66,5 @@ function newCard() {
 }
 
 function backgroundchange(){
-    buttonflip.style.display = "none";
-    console.log("banana")
+    startup.style.display= "none";
 }
