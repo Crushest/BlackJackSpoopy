@@ -8,7 +8,8 @@ body {
 }
 
 h1 { 
-    color: goldenrod;
+    color: rgb(197, 197, 197);
+    -webkit-text-stroke: 1px #4d4d4d;
 }
 
 #message-el {
@@ -16,21 +17,21 @@ h1 {
 }
 
 button {
-    color: #016f32;
+    color: none;
     width: 150px;
-    background: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    border: none;
-    border-radius: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    background: none;
+    padding: 10px 5px;
+    font-weight: bolder;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-size: large;
+    -webkit-text-stroke: .5px #aaaaaa;
 }
 
 
-/* Button Flip Start */
-#startup{
+/* Startscreen */
+/* #startup{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,5 +99,5 @@ button {
     background: #323237;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
-  }
+  } */
   /* Button Flip End */
