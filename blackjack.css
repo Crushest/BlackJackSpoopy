@@ -3,20 +3,23 @@ body {
     background-image: url("background/scaryblackjack.jpeg");
     background-size: cover;
     font-weight: bold;
-    color: white;
+    color: #adadaf;
     text-align: center;
 }
 
 h1 { 
     color: transparent ;
-    -webkit-text-stroke: .3vw #757575;
+    -webkit-text-stroke: .3vw #adadaf;
     font-size: 10vw;
     letter-spacing: 5vw;
-    text-align: center
+    text-align: center;
 }
 
 #message-el {
     font-style: italic;
+    font-size: 3.3vw;
+    text-shadow: 0 0 3.5px #cccccc;
+    margin: -75px 0 0 0;
 }
 
 button {
@@ -25,11 +28,11 @@ button {
     background: none;
     padding: 10px 5px;
     font-weight: bolder;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #adadaf;
     border-radius: 5px;
-    margin: 5px 10px;
+    margin: 5px 100px;
     font-size: large;
-    -webkit-text-stroke: .75px #aaaaaa;
+    -webkit-text-stroke: .75px #adadaf;
 }
 
 
