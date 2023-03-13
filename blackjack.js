@@ -1,7 +1,3 @@
-let player = {
-    name: "Per",
-    chips: 200
-}
 
 let cards = []
 let sum = 0
@@ -12,9 +8,9 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
-let buttonflip = document.getElementById("button-flip")
+let playerName = document.getElementById("player-name")
+let chips = 100
 
-playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -68,3 +64,13 @@ function newCard() {
 function backgroundchange(){
     startup.style.display= "none";
 }
+
+playerName.addEventListener("keypress", function(event){
+if (event.key === "Enter"){
+    event.preventDefault();
+    playerName.style.display="none";
+    document.getElementById("visibility").style.visibility="visible";
+    var person = document.getElementById("player-name").value;
+    document.getElementById("player-el").innerHTML = person + ": $" + chips;
+}
+})

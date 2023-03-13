@@ -5,7 +5,9 @@
     <body>
         <div id="startup" style="z-index: -1;">
             <div id="box"></div>
-            <a href="#" class="btn-flip" data-back="Are you sure?" data-front="START GAME" onclick="backgroundchange()"></a>
+            
+            <div id="visibility"><a href="#" class="btn-flip" data-back="Are you sure?" data-front="START GAME" onclick="backgroundchange()"></a></div>
+            <input type="text" id="player-name" style="z-index: 1" placeholder="Enter player-name" value="">
         </div>
         <div id="game">
             <h1>Blackjack</h1>
@@ -15,7 +17,7 @@
             <button onclick="startGame()">START GAME</button>
             <button onclick="newCard()">NEW CARD</button>
         </div>
-        <div class="bid">
+        <div id="bid">
             <p id="player-el"></p></body>
         </div>
         <script src="blackjack.js"></script>
