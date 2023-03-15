@@ -10,7 +10,80 @@ let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 let playerName = document.getElementById("player-name")
 let chips = 100
+let startback = document.getElementById("box")
 
+let card2 =[
+    "cards/2♠.png",
+    "cards/2♣.png",
+    "cards/2♥.png",
+    "cards/2♦.png"
+]
+let card3 =[
+    "cards/3♠.png",
+    "cards/3♣.png",
+    "cards/3♥.png",
+    "cards/3♦.png"
+]
+let card4 =[
+    "cards/4♠.png",
+    "cards/4♣.png",
+    "cards/4♥.png",
+    "cards/4♦.png"
+]
+let card5 =[
+    "cards/5♠.png",
+    "cards/5♣.png",
+    "cards/5♥.png",
+    "cards/5♦.png"
+]
+let card6 =[
+    "cards/6♠.png",
+    "cards/6♣.png",
+    "cards/6♥.png",
+    "cards/6♦.png"
+]
+let card7 =[
+    "cards/7♠.png",
+    "cards/7♣.png",
+    "cards/7♥.png",
+    "cards/7♦.png"
+]
+let card8 =[
+    "cards/8♠.png",
+    "cards/8♣.png",
+    "cards/8♥.png",
+    "cards/8♦.png"
+]
+let card9 =[
+    "cards/9♠.png",
+    "cards/9♣.png",
+    "cards/9♥.png",
+    "cards/9♦.png"
+]
+let card10 =[
+    "cards/10♠.png",
+    "cards/10♣.png",
+    "cards/10♥.png",
+    "cards/10♦.png",
+    "cards/K♠.png",
+    "cards/K♣.png",
+    "cards/K♥.png",
+    "cards/K♦.png",
+    "cards/J♠.png",
+    "cards/J♣.png",
+    "cards/J♥.png",
+    "cards/J♦.png",
+    "cards/Q♠.png",
+    "cards/Q♣.png",
+    "cards/Q♥.png",
+    "cards/Q♦.png"
+]
+let cardA =[
+    "cards/A♠.png",
+    "cards/A♣.png",
+    "cards/A♥.png",
+    "cards/A♦.png"
+]
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
