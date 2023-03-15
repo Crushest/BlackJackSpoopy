@@ -15,11 +15,16 @@
             <p id="cards-el">Cards:</p>
             <p id="sum-el">Sum:</p>
             <button onclick="startGame()">START GAME</button>
-            <button onclick="newCard()">NEW CARD</button>
+            <button onclick="newCard()">HIT</button>
+            <button onclick="stand()">STAND</button>
         </div>
         <div id="bid">
-            <p id="player-el"></p></body>
+            <button class="coin" id="coin1" onclick="bid1()" ondblclick="out1()">1</button>
+            <button class="coin" id="coin5" onclick="bid5()" ondblclick="out5()">5</button>
+            <button class="coin" id="coin10" onclick="bid10()" ondblclick="out10()">10</button>
+            <button class="coin" id="coin25"  onclick="bid25()" ondblclick="out25()">25</button>
         </div>
+        <p id="player-el"></p></body>
         <script src="blackjack.js"></script>
     </body>
 </html>

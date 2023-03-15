@@ -35,6 +35,57 @@ button {
     -webkit-text-stroke: .75px #adadaf;
 }
 
+/* Bidding start */
+#bid{
+  z-index: -1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  left: 80vw;
+  top: -15vw;
+  height: 350px;
+}
+.coin{
+  border-radius: 50%;
+  margin: 2px 5px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+#coin1{
+  color: #ffffff9c;
+  border:1px solid #ffffff9c;
+  -webkit-text-stroke: 0px #adadaf;
+  text-shadow: 0 0 2px #ffffff;
+}
+#coin5{
+  color: #00ffff88;
+  border: 1px solid #00ffff88;
+  -webkit-text-stroke: 0px #adadaf;
+  text-shadow: 0 0 1px #ffffff;
+}
+#coin10{
+  color: #ff000088;
+  border: 1px solid #ff000088;
+  -webkit-text-stroke: 0px #adadaf;
+  text-shadow: 0 0 2px #ffffff;
+}
+#coin25{
+  color: #00ff0098;
+  border: 1px solid #00ff0098;
+  -webkit-text-stroke: 0px #adadaf;
+  text-shadow: 0 0 2px #ffffff;
+}
+#player-el{
+  z-index: -1;
+  font-size: 2vw;
+  margin: 10px;
+  position: relative;
+  bottom: 300px;
+}
+/* Bidding end */
 
 /* Startscreen */
 #player-name{
