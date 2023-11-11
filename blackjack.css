@@ -27,7 +27,7 @@ button {
     font-weight: bolder;
     border: 1px solid #aaaaaa;
     border-radius: 5px;
-    margin: 5px 10px;
+    margin: 50px 2vw 0px 2vw;
     font-size: large;
     -webkit-text-stroke: .75px #aaaaaa;
 }
