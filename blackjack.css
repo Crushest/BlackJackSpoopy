@@ -1,25 +1,22 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("background/scaryblackjack.jpeg");
+    background-image: url("scaryblackjack.jpeg");
     background-size: cover;
     font-weight: bold;
-    color: #adadaf;
+    color: white;
     text-align: center;
 }
 
 h1 { 
     color: transparent ;
-    -webkit-text-stroke: .3vw #adadaf;
+    -webkit-text-stroke: .3vw #757575;
     font-size: 10vw;
     letter-spacing: 5vw;
-    text-align: center;
+    text-align: center
 }
 
 #message-el {
     font-style: italic;
-    font-size: 3.3vw;
-    text-shadow: 0 0 3.5px #cccccc;
-    margin: -75px 0 0 0;
 }
 
 button {
@@ -28,83 +25,19 @@ button {
     background: none;
     padding: 10px 5px;
     font-weight: bolder;
-    border: 1px solid #adadaf;
+    border: 1px solid #aaaaaa;
     border-radius: 5px;
-    margin: 50px 2vw 0px 2vw;
+    margin: 5px 10px;
     font-size: large;
-    -webkit-text-stroke: .75px #adadaf;
+    -webkit-text-stroke: .75px #aaaaaa;
 }
 
-/* Bidding start */
-#bid{
-  z-index: -1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  left: 80vw;
-  top: -15vw;
-  height: 350px;
-}
-.coin{
-  border-radius: 50%;
-  margin: 2px 5px;
-  padding: 5px;
-  width: 50px;
-  height: 50px;
+button:hover {
+  color: white;
 }
 
-#coin1{
-  color: #ffffff9c;
-  border:1px solid #ffffff9c;
-  -webkit-text-stroke: 0px #adadaf;
-  text-shadow: 0 0 2px #ffffff;
-}
-#coin5{
-  color: #00ffff88;
-  border: 1px solid #00ffff88;
-  -webkit-text-stroke: 0px #adadaf;
-  text-shadow: 0 0 1px #ffffff;
-}
-#coin10{
-  color: #ff000088;
-  border: 1px solid #ff000088;
-  -webkit-text-stroke: 0px #adadaf;
-  text-shadow: 0 0 2px #ffffff;
-}
-#coin25{
-  color: #00ff0098;
-  border: 1px solid #00ff0098;
-  -webkit-text-stroke: 0px #adadaf;
-  text-shadow: 0 0 2px #ffffff;
-}
-#player-el{
-  z-index: -1;
-  font-size: 2vw;
-  margin: 10px;
-  position: relative;
-  bottom: 300px;
-}
-/* Bidding end */
 
 /* Startscreen */
-#player-name{
-  position: absolute;
-  overflow: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #323237;
-  color: #adadaf;
-  font-style: italic;
-  font-weight: bolder;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-  text-align: center;
-  padding: 10px 20px;
-}
-#visibility{
-  visibility: hidden;
-}
 #startup{
     display: flex;
     justify-content: center;
@@ -118,7 +51,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("background/alley.jpeg");
+  background-image: url("alley.jpeg");
   background-size: cover;
   background-position: -55px , center;
 }
