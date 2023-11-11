@@ -1,22 +1,18 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
   background-image: url("background/scaryblackjack.jpeg");
-  background-image: url("scaryblackjack.jpeg");
   background-size: cover;
   font-weight: bold;
   color: #adadaf;
-  color: white;
   text-align: center;
 }
 
 h1 { 
   color: transparent ;
   -webkit-text-stroke: .3vw #adadaf;
-  -webkit-text-stroke: .3vw #757575;
   font-size: 10vw;
   letter-spacing: 5vw;
   text-align: center;
-  text-align: center
 }
 
 #message-el {
@@ -27,17 +23,17 @@ h1 {
 }
 
 button {
+  color: transparent;
+  width: 150px;
   background: none;
   padding: 10px 5px;
   font-weight: bolder;
   border: 1px solid #adadaf;
-  border: 1px solid #aaaaaa;
   border-radius: 5px;
+  margin: 5px 100px;
   margin: 50px 2vw 0px 2vw;
-  margin: 5px 10px;
   font-size: large;
   -webkit-text-stroke: .75px #adadaf;
-  -webkit-text-stroke: .75px #aaaaaa;
 }
 
 /* Bidding start */
@@ -57,8 +53,6 @@ margin: 2px 5px;
 padding: 5px;
 width: 50px;
 height: 50px;
-button:hover {
-color: white;
 }
 
 #coin1{
@@ -115,14 +109,69 @@ visibility: hidden;
 #startup{
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+#box{
+position: absolute;
+height: 100vh;
+width: 100%;
+overflow: auto;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 background-image: url("background/alley.jpeg");
-background-image: url("alley.jpeg");
 background-size: cover;
 background-position: -55px , center;
 }
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 7px;
+  display: inline-block;
+  text-decoration: none;
+  font-style: italic;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(77, 77, 77, 0.35) 0px 5px 15px;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #323237;
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
 }
